@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.6.0.slim.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="col-md-1">
+        <h6>US Army Rangers.</h6>
+    </div>
+    <nav style="color:blue">
+        @Html.ActionLink("Home", "Home", "Home")
+        @Html.ActionLink("About Us", "About", "Home")
+        @Html.ActionLink("Life", "Life", "Home")
+        @Html.ActionLink("Contact", "Contact", "Home")
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
